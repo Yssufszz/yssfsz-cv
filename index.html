@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yssufsz - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+  <div class="button-container">
+    <a href="path/to/your-cv.pdf" download>
+      <button class="download-btn">Download CV</button>
+    </a>
+  </div>
+  
+  <div class="container">
+    <section class="fade profile">
+      <h1>Yusuf Simangunsong</h1>
+      <p class="info">
+        <i class="fas fa-map-marker-alt"></i> Bandung, Indonesia<br>
+        <i class="fas fa-envelope"></i> <a href="mailto:ysuf2303@gmail.com">ysuf2303@gmail.com</a><br>
+        <i class="fas fa-phone"></i> +62 5723494016<br>
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yusuf-s-004752258/" target="_blank">linkedin.com/in/yusuf-s</a><br>
+        <i class="fas fa-globe"></i> <a href="https://yssfsz.netlify.app/" target="_blank">yssfsz.netlify.app</a><br>
+        <i class="fab fa-github"></i> <a href="https://github.com/Yssufszz" target="_blank">github.com/Yssufszz</a>
+      </p>
+    </section>
+
+    <section class="section fade">
+      <h2>Education</h2>
+      <p><strong>SMK Pasundan 2 Banjaran</strong> - Kabupaten Bandung</p>
+      <ul>
+        <li>Teknik Komputer dan Jaringan (2019 - 2022)</li>
+      </ul>
+    </section>
+
+    <section class="section fade">
+      <h2>Work Experience</h2>
+      <p><strong>Freelancer Web Dev</strong> (2023 - Now)</p>
+      <ul>
+        <li>Pembuatan website bisnis dan portofolio.</li>
+        <li>Jasa pembuatan website tugas mahasiswa (responsive, dinamis, dan fungsional).</li>
+        <li>Fullstack web development (frontend & backend) berbasis kebutuhan klien.</li>
+      </ul>
+      <p><strong>CN Computer</strong> - Teknisi Instalasi Magang (Juli 2021 - Oktober 2021)</p>
+      <ul>
+        <li>Melakukan instalasi dan perakitan komputer desktop serta pemasangan jaringan LAN.</li>
+        <li>Melakukan troubleshooting perangkat keras seperti motherboard, RAM, harddisk, dan PSU.</li>
+      </ul>
+    </section>
+
+    <section class="section fade">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Bahasa Indonesia, English</li>
+        <li><strong>Programming Languages:</strong> PHP, JavaScript, SQL, HTML, CSS, Kotlin (basic).</li>
+        <li><strong>Frameworks & Libraries:</strong> React, Node.js, Laravel (basic), Next.js (basic), Express.js (basic), Bootstrap, Tailwind CSS.</li>
+        <li><strong>Tools & Tech:</strong> VS Code, XAMPP, Android Studio, Git, Firebase, MySQL.</li>
+        <li><strong>Soft Skills:</strong> Teamwork, Communication, Problem Solving.</li>
+        <li><strong>Technical Skills:</strong> Web Development (Frontend & Backend), API Integration, Database Management, PC Assembly & Troubleshooting.</li>
+      </ul>
+    </section>
+
+    <section class="section fade">
+      <h2>Portfolio</h2>
+      <ul>
+        <li>
+          <strong><a href="https://juraganbengkel.web.id" target="_blank">Juragan Bengkel</a></strong> – 
+          Website manajemen bengkel dengan fitur pencatatan transaksi harian, integrasi API Maps (OpenStreetMap), autentikasi menggunakan Firebase, serta dashboard interaktif. 
+          Dibangun menggunakan PHP Native & Bootstrap.
+        </li>
+        <li>
+          <strong><a href="https://juraganbaro.my.id" target="_blank">Juragan Baro</a></strong> – 
+          Sistem pembukuan usaha multi-lini (Kardus, Teripang, Foto) dengan laporan bulanan dan notifikasi otomatis untuk hutang jatuh tempo.
+        </li>
+        <li>
+          <strong><a href="https://kartunamadigital.vercel.app/" target="_blank">Kartunama Digital</a></strong> – 
+          Website pembuat kartu nama (Buat Pengembangan lanjut), menggunakan React dan Tailwind CSS.
+        </li>
+        <li>
+          <strong><a href="https://yssufszz.github.io/login-register-ysfsz/" target="_blank">Login/Register Slider UI</a></strong> – 
+          Halaman autentikasi modern satu halaman dengan efek transisi slider, dark/light mode toggle, dibangun menggunakan HTML, CSS, JS, dan Bootstrap.
+        </li>
+      </ul>
+      <p>📂 Lengkapnya di GitHub saya: <a href="https://github.com/Yssufszz" target="_blank">https://github.com/Yssufszz</a></p>
+    </section>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    document.querySelectorAll('.fade').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
